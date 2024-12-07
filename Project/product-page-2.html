@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta name="description" content="This is the Home Page of the Website">
+  <title>HOME</title>
+
+  <!-- Inserting J-Query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Linking the javascript -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="product-page">
+  <header id="header"></header>
+
+  <!-- Masthead of the Product Page -->
+  <section class="product-masthead masthead">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <menu>
+        <li><a href="./index.html" class="slash"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="./index.html#shopItems" class="slash"><i class="fa-solid fa-shop"></i>Shop</a></li>
+        <li><a href="#"><i class="fa-solid fa-laptop"></i>Dell XPS 15 Laptop</a></li>
+      </menu>
+    </div>
+    <!-- Name of the Product in a heading -->
+    <h1>Dell XPS 15 Laptop</h1>
+  </section>
+
+
+  <main>
+    <!-- Two sections , One will have a photo of Product , Other will have Information  -->
+    <section class="product-info">
+      <div class="product-photo product-photo-dell"></div>
+      <div class="product-summary">
+        <h3>Dell XPS 15 Laptop</h3>
+        <span class="product-price">$1,299</span>
+        <p>
+          The Dell XPS laptop combines powerful performance with sleek, premium design. Featuring a stunning
+          high-resolution display, fast processing speed, and long-lasting battery life, it is perfect for both work and
+          play. With its slim profile, lightweight construction, and advanced features like an InfinityEdge screen and
+          top-tier graphics, the Dell XPS delivers a superior computing experience for users who demand both style and
+          performance. Whether for productivity, entertainment, or creativity, the Dell XPS is built to exceed
+          expectations.
+        </p>
+        <div class="product-info-btns">
+          <div>
+            <span id="sub-1-pro"><i class="fa-solid fa-minus"></i></span>
+            <span id="total-pro">1</span>
+            <span id="add-1-pro"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Next section will have Description and Reviews and these will be toggle tabs -->
+    <section class="tabs">
+      <div class="buttons">
+        <input type="radio" name="options" value="option1" checked id="opt-1">
+        <label for="opt-1">
+          <div class="tab-name">Description</div>
+        </label>
+        <input type="radio" name="options" value="option2" id="opt-2">
+        <label for="opt-2">
+          <div class="tab-name">Review</div>
+        </label>
+      </div>
+      <div class="tabs-content">
+        <div class="description">
+          <p>The Dell XPS 15 is a high-performance laptop that combines powerful hardware with a premium design.
+            Featuring a 15.6-inch 4K OLED or Full HD display, it delivers stunning visuals with vibrant colors and sharp
+            details, perfect for creative professionals and entertainment enthusiasts. Powered by the latest Intel Core
+            i7 or i9 processors and options for NVIDIA GeForce GTX or RTX graphics, the XPS 15 offers smooth performance
+            for demanding tasks like video editing, gaming, and 3D rendering. Its all-metal chassis and slim bezels
+            provide a sleek, modern look, while the long-lasting battery ensures productivity throughout the day.</p>
+        </div>
+        <div class="review noDisplay">
+          <form action="#" class="review-form">
+            <p>Your email will not be published</p>
+            <label for="review-textarea">Your Review</label>
+            <textarea name="" id="review-textarea"></textarea>
+            <div class="text-email">
+              <div>
+                <label for="review-name">Name</label>
+                <input type="text" id="review-name">
+              </div>
+              <div>
+                <label for="review-email">Email</label>
+                <input type="email" id="review-email">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Here I will Write Related Products Section which will have other 2 prpoducts -->
+  <aside>
+    <h5>Related Products</h5>
+    <div class="grid-container">
+      <article>
+        <div class="content">
+          <img src="./img/homepage-laptop1.png" alt="photo1">
+          <h4>Apple MacBook</h4>
+          <p>Powered by Apple's M2 chip, this lightweight laptop offers fast performance, a stunning 13.6-inch Retina
+            display, and up to 18 hours of battery life. Ideal for everyday use and multitasking.</p>
+          <h6>$1,299</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+            </li>
+          </ul>
+          <a class="buy-btn-1" href="./product-page-1.html">Buy Now</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="content">
+          <img src="./img/homepage-laptop3.jpg" alt="photo3">
+          <h4>HP Spectre</h4>
+          <p>A 2-in-1 laptop with a 14-inch OLED touchscreen, Intel 12th Gen processors, and a flexible 360-degree
+            hinge. Great for work, entertainment, and long battery life with 13th Gen processor.</p>
+          <h6>$1,399</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-solid fa-star-half-stroke"></i>
+              <i class="fa fa-star"></i>
+            </li>
+          </ul>
+          <a class="buy-btn-3" href="./product-page-3.html">Buy Now</a>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+  <footer id="footer">
+  </footer>
+</body>
+
+</html>

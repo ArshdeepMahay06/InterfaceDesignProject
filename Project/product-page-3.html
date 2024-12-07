@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+  <meta name="description" content="This is the Home Page of the Website">
+  <title>HOME</title>
+
+  <!-- Inserting J-Query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Linking the javascript -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="product-page">
+  <header id="header"></header>
+  <!-- Masthead of the Product Page -->
+  <section class="product-masthead masthead">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <menu>
+        <li><a href="./index.html" class="slash"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="./index.html#shopItems" class="slash"><i class="fa-solid fa-shop"></i>Shop</a></li>
+        <li><a href="#"><i class="fa-solid fa-laptop"></i>HP Spectre x360 14</a></li>
+      </menu>
+    </div>
+    <!-- Name of the Product in a heading -->
+    <h1>HP Spectre x360 14</h1>
+  </section>
+  <!-- Main content of the Page -->
+  <main>
+    <!-- Two sections , One will have a photo of Product , Other will have Information  -->
+    <section class="product-info">
+      <div class="product-photo product-photo-hp"></div>
+      <div class="product-summary">
+        <h3>HP Spectre x360 14</h3>
+        <span class="product-price">$1,399</span>
+        <p>
+          The HP Spectre x360 is a premium 2-in-1 laptop that seamlessly blends elegance with power. With its ultra-slim
+          design, vibrant touchscreen display, and impressive performance, it’s perfect for both work and entertainment.
+          Powered by the latest processors, it offers fast performance, long battery life, and top-tier security
+          features. The HP Spectre x360’s convertible design lets you switch between laptop and tablet modes, providing
+          versatility for all your needs. Whether you're working on creative projects or streaming content, the HP
+          Spectre delivers a sophisticated experience in every way.
+        </p>
+        <div class="product-info-btns">
+          <div>
+            <span id="sub-1-pro"><i class="fa-solid fa-minus"></i></span>
+            <span id="total-pro">1</span>
+            <span id="add-1-pro"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Next section will have Description and Reviews and these will be toggle tabs -->
+    <section class="tabs">
+      <div class="buttons">
+        <input type="radio" name="options" value="option1" checked id="opt-1">
+        <label for="opt-1">
+          <div class="tab-name">Description</div>
+        </label>
+        <input type="radio" name="options" value="option2" id="opt-2">
+        <label for="opt-2">
+          <div class="tab-name">Review</div>
+        </label>
+      </div>
+      <div class="tabs-content">
+        <div class="description">
+          <p>The HP Spectre x360 14 is a versatile 2-in-1 convertible laptop designed for both work and play. Featuring
+            a 13.5-inch OLED or Full HD display with a 3:2 aspect ratio, it offers stunning visuals and extra screen
+            real estate for productivity tasks. Powered by Intel's latest Core i5 or i7 processors, it delivers smooth
+            performance for multitasking and light gaming. The Spectre x360’s elegant design, with a premium aluminum
+            chassis and slim profile, makes it both stylish and portable. With long battery life, fast charging, and a
+            360-degree hinge, it offers flexibility to switch between laptop, tablet, and tent modes for various uses.
+          </p>
+        </div>
+        <div class="review noDisplay">
+          <form action="#" class="review-form">
+            <p>Your email will not be published</p>
+            <label for="review-textarea">Your Review</label>
+            <textarea name="" id="review-textarea"></textarea>
+            <div class="text-email">
+              <div>
+                <label for="review-name">Name</label>
+                <input type="text" id="review-name">
+              </div>
+              <div>
+                <label for="review-email">Email</label>
+                <input type="email" id="review-email">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Here I will Write Related Products Section which will have other 2 prpoducts -->
+  <aside>
+    <h5>Related Products</h5>
+    <div class="grid-container">
+      <article>
+        <div class="content">
+          <img src="./img/homepage-laptop1.png" alt="photo1">
+          <h4>Apple MacBook</h4>
+          <p>Powered by Apple's M2 chip, this lightweight laptop offers fast performance, a stunning 13.6-inch Retina
+            display, and up to 18 hours of battery life. Ideal for everyday use and multitasking.</p>
+          <h6>$1,299</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+            </li>
+          </ul>
+          <a class="buy-btn-1" href="./product-page-1.html">Buy Now</a>
+        </div>
+      </article>
+
+      <article>
+        <div class="content">
+          <img src="./img/homepage-laptop2.jpg" alt="photo2">
+          <h4>Dell XPS</h4>
+          <p>A sleek ultraportable laptop with Intel's 13th Gen processors and a 13.4-inch InfinityEdge display. Perfect
+            for work and on-the-go use with excellent performance and long battery life .</p>
+          <h6>$1,199</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-solid fa-star-half-stroke"></i>
+            </li>
+          </ul>
+          <a class="buy-btn-2" href="./product-page-2.html">Buy Now</a>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+
+  <footer id="footer"></footer>
+</body>
+
+</html>
